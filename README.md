@@ -16,9 +16,9 @@ Introduction:
   program derives functionality for analyzing BAM files from the classes
   implimented in the bamtools library. First the raw paired reads are aligned
   with BWA mem with the penalty for unsparring reads set to zero. The the bam
-  file is then parsed for reads that map to the locus containing a barcode 
-  sequence. Reads mapping to this locus are then searched against a library of 
-  barcode sequences and if a match is found, the opposite mate is accessed if it 
+  file is then parsed for reads that map to the locus containing a barcode
+  sequence. Reads mapping to this locus are then searched against a library of
+  barcode sequences and if a match is found, the opposite mate is accessed if it
   is duplicately mapped. Duplicately mapped reads are then digested with the
   restriction enzyme used to create the library, rewritten to fastq format, and
   remapped to the reference genome. The resulting BAM file is then tagged with
@@ -41,7 +41,7 @@ Input parameters:
      - If the sequence of interest is knocked in, the native locus should be
        mask from the reference and the sequence of the knocked in construct
        should be appended to the reference genome.
-  2) Mate pair 1 (fastq format)
+  2) Mate Pair 1 (fastq format)
   3) Mate pair 2 (fastq format)
   4) Barcode sequences (fasta format)
   5) Restriction site sequence
@@ -55,7 +55,7 @@ Input parameters:
 Output:
 
   1) Bamfile containing only informative reads. The index of the barcode
-      contained in the opposite mate pair is indicated under the tag "XB". 
+      contained in the opposite mate pair is indicated under the tag "XB".
   2) Tab delimited file containing the barcode sequences, the number assigned to
      each barcode and written in the bamfile under the "XB" tag.
   3) Fastq file containing the processed read. Some of which will be

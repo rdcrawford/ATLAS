@@ -1,5 +1,6 @@
-# ATLAS:  
-Alignment of Targeted Locus Amplification Sequencing 
+# ATLAS # 
+
+  Alignment of Targeted Locus Amplification Sequencing 
 
   Author:  Ryan D. Crawford
   

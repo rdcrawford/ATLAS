@@ -41,7 +41,7 @@ Input parameters:
      - If the sequence of interest is knocked in, the native locus should be
        mask from the reference and the sequence of the knocked in construct
        should be appended to the reference genome.
-  2) Mate Pair 1 (fastq format)
+  2) Mate pair 1 (fastq format)
   3) Mate pair 2 (fastq format)
   4) Barcode sequences (fasta format)
   5) Restriction site sequence

@@ -4,6 +4,7 @@ Alignment of Targeted Locus Amplification Sequencing
 --------------------------------------------------------------------------------
 
   Author:  Ryan D. Crawford
+  
   Contact: rcrawfo@umich.edu
 
 --------------------------------------------------------------------------------

@@ -25,10 +25,7 @@ class Barcode
     //              input parameters.
     Barcode(string inBarcodeSeq);
 
-    // Input      The number of the mate pair
-    // Return     Number of reads aligning to that barcode.
-    // Desctipion Getter function for the number of reads associated with a
-    //            specific barcode.
+    // Return Number of reads aligning to that barcode.
     int getReadCount();
 
     // Desctipion Getter function for the sequence of a specific barcode

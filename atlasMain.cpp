@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
     << "    " << argv[0]
     << " <reference> <matePairOneFile.fq> <matePairTwoFile.fq> <Barcodeseq>"
     << " <Restriction Site> <Anchor chromosome> <Bacrode start> <Barcode end>"
-    << endl << endl
+    << endl                                       << endl
     << "      1) Reference (fasta format)"        << endl
     << "      2) Mate pair 1 (fastq format)"      << endl
     << "      3) Mate pair 2 (fastq format)"      << endl
@@ -170,7 +170,7 @@ int main(int argc, char *argv[])
   ostringstream bwaMemString;               // Open the string stream
   string        bwaMemCommand;              // String to store the command
   bwaMemString.str("");                     // Clear the string stream
-  bamFile = "firstPass.bam";
+  bamFile = "processedReads.bam";           // Name of the bam file to write 
 
   // Append arguments to the string stream
   bwaMemString << "bwa mem -U 0 -M " << reference << " " << fqFileRead1 << " "
@@ -224,7 +224,7 @@ int main(int argc, char *argv[])
   string        realignBamFile = "processedReads.bam";
   ostringstream bwaMemReAlgnStr;    // Open the string stream
   string        bwaMemReAlgnStrCmd; // String to store the command
-  bwaMemReAlgnStr.str("");             // Clear the string stream
+  bwaMemReAlgnStr.str("");          // Clear the string stream
 
   // Append arguments to the string stream
   bwaMemReAlgnStr << "bwa mem " << reference <<

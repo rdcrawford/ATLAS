@@ -1,15 +1,14 @@
-# ATLAS
-Alignment of Targeted Locus Amplification Sequencing 
+# ATLAS: 
+  ##Alignment of Targeted Locus Amplification Sequencing 
 
---------------------------------------------------------------------------------
+
 
   Author:  Ryan D. Crawford
   
   Contact: rcrawfo@umich.edu
 
---------------------------------------------------------------------------------
 
-Introduction:
+##Introduction:
 
   ATLAS (Alignment of Targeted Locus Amplification Sequencing) is designed for
   analysis of TLA data used in high throughput mutagenesis experiments. This
@@ -25,17 +24,16 @@ Introduction:
   the index of the barcode sequence contained in the opposite read. The BAM
   file is then sorted and written.
 
---------------------------------------------------------------------------------
 
-Dependencies:
+##Dependencies:
 
   1) Bamtools C++ API
   2) BWA
   3) Samtools
 
---------------------------------------------------------------------------------
 
-Input parameters:
+
+##Input parameters:
 
   1) Reference genome (fasta format)
      - If the sequence of interest is knocked in, the native locus should be
@@ -50,9 +48,8 @@ Input parameters:
   7) Barcode start position (0 indexed)
   8) Barcode end position (0 indexed)
 
---------------------------------------------------------------------------------
 
-Output:
+##Output:
 
   1) Bamfile containing only informative reads. The index of the barcode
       contained in the opposite mate pair is indicated under the tag "XB".
@@ -61,4 +58,4 @@ Output:
   3) Fastq file containing the processed read. Some of which will be
      restriction fragments from the
 
---------------------------------------------------------------------------------
+

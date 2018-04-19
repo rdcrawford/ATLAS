@@ -50,7 +50,7 @@ vector <readData> *findInformativeReads(string bamFile, string baiFile,
 //             information on all of the informative reads and if reads are
 //             unmapped or duplicately mapped the function digests them and
 //             writes a new fastq file with the digrest products
-void processInformativeReads(std::string &bamFile, std::string &restrSite,
+void processInformativeReads(string &bamFile, string &restrSite,
      vector <readData> *informativeReads);
 
 // Input       1) Vector containting the vectro of structs with information on
